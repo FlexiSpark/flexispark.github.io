@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>FlexiSpark Solutions</title>
+    <style>
+        .text-gradient {
+            color: #BC13FE;
+            background-image: linear-gradient(45deg, #BC13FE, #E025BE, #F0459A, #FB697A, #FF8E5F);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-2 {
+            color: #4f5082;
+            background-image: linear-gradient(45deg, #4f5082, #1f53fd 25%, #da1a3d 50%, #1bb74a 75%, #ef9165 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-3 {
+            color: #8C8FCF; 
+            background-image: linear-gradient(135deg, #8C8FCF , #1E52FC 25%, #D91A3D 45%, #1CB84A 75%, #B3F714 100%); 
+            background-clip: text; 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        body {
+            /* large non-angled
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(2) rotate(90)'><rect x='0' y='0' width='100%' height='100%' fill='%23020618ff'/><path d='M9.19 3.93a9.187 9.187 0 00-5.26 5.26m0 6.618a9.187 9.187 0 005.26 5.259m6.619.002a9.187 9.187 0 005.261-5.261m0-6.618a9.187 9.187 0 00-5.26-5.26'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%230f172bff' fill='none'/><path d='M3 0c0 4-6 4-6 0s6-4 6 0zm25 0c0 4-6 4-6 0s6-4 6 0zM3 25c0 4-6 4-6 0s6-4 6 0zm25 0c0 4-6 4-6 0s6-4 6 0z'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%230a1327ff' fill='none'/><path d='M12.5 8.523l3.977 3.977-3.977 3.977L8.523 12.5z'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%23172037ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-82,-90)' fill='url(%23a)'/></svg>");
+            */
+            /* Large angled */
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(2) rotate(75)'><rect x='0' y='0' width='100%' height='100%' fill='%23020618ff'/><path d='M9.19 3.93a9.187 9.187 0 00-5.26 5.26m0 6.618a9.187 9.187 0 005.26 5.259m6.619.002a9.187 9.187 0 005.261-5.261m0-6.618a9.187 9.187 0 00-5.26-5.26'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%230f172bff' fill='none'/><path d='M3 0c0 4-6 4-6 0s6-4 6 0zm25 0c0 4-6 4-6 0s6-4 6 0zM3 25c0 4-6 4-6 0s6-4 6 0zm25 0c0 4-6 4-6 0s6-4 6 0z'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%230a1327ff' fill='none'/><path d='M12.5 8.523l3.977 3.977-3.977 3.977L8.523 12.5z'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%23172037ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-82,-90)' fill='url(%23a)'/></svg>");
+            /*
+            Small angled
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(1) rotate(75)'><rect x='0' y='0' width='100%' height='100%' fill='%23020618ff'/><path d='M9.19 3.93a9.187 9.187 0 00-5.26 5.26m0 6.618a9.187 9.187 0 005.26 5.259m6.619.002a9.187 9.187 0 005.261-5.261m0-6.618a9.187 9.187 0 00-5.26-5.26'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%230f172bff' fill='none'/><path d='M3 0c0 4-6 4-6 0s6-4 6 0zm25 0c0 4-6 4-6 0s6-4 6 0zM3 25c0 4-6 4-6 0s6-4 6 0zm25 0c0 4-6 4-6 0s6-4 6 0z'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%230a1327ff' fill='none'/><path d='M12.5 8.523l3.977 3.977-3.977 3.977L8.523 12.5z'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='%23172037ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-41,-45)' fill='url(%23a)'/></svg>");
+            */
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950">
+    <div class="space-y-8 pt-30 pb-40 px-4 mx-auto max-w-screen-xl text-center">
+        <img src="images/flexispark-logo-white-transparent.png" alt="FlexiSpark Solutions Logo" class="mx-auto size-48" />
+        <h1 class="text-gradient-3 text-5xl/15 font-extralight text-center text-balance text-shadow-lg">
+            <!-- Creating affordable business tools for everyone -->
+
+            Our mission: To develop enterprise-grade business tools that are accessible and affordable for all
+        </h1>
+    </div>
+    <section class="">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 bg-slate-950 rounded-2xl shadow-lg border border-blue-900">
+            <div class="mx-auto mb-8 max-w-screen-md lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-light text-gray-900 dark:text-white">Our Team</h2>
+                <p class="font-light text-gray-500 sm:text-lg text-balance dark:text-gray-400">
+                    Meet the dedicated individuals behind FlexiSpark Solutions, committed to delivering innovative and affordable business tools. Our team combines expertise and passion to empower businesses of all sizes.
+                </p>
+            </div>
+            <div class="grid gap-8 lg:gap-8 sm:grid-cols-2 md:grid-cols-3">
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 size-50 rounded-full"
+                        src="images/john-brock.png"
+                        alt="John Brock Avatar">
+                    <h3 class="text-2xl font-light tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">John Brock</a>
+                    </h3>
+                    <p class="text-white mb-1">Director</p>
+                    <p class="text-sm">Front-end development & UI/UX</p>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 size-50 rounded-full"
+                        src="images/lewis-chip.png"
+                        alt="Lewis Chippendale Avatar">
+                    <h3 class="text-2xl font-light tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Lewis Chippendale</a>
+                    </h3>
+                    <p class="text-md text-white mb-1">Director</p>
+                    <p class="text-sm">Back-end development</p>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 size-50 rounded-full"
+                        src="images/alex-elwell.png"
+                        alt="Alex Elwell Avatar">
+                    <h3 class="text-2xl font-light tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Alex Elwell</a>
+                    </h3>
+                    <p class="text-md text-white mb-1">Director</p>
+                    <p class="text-sm">Server & Cloud Architecture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-10 lg:px-6 text-gray-400 text-sm">
+            &copy; 2025 FlexiSpark Solutions. All rights reserved. Registered in England and Wales (company number 16463797).
+        </div>
+    </section>
+</body>
+
+</html>
